@@ -114,7 +114,7 @@ async function sortMedicine() {
   let response = "";
   const data = await getData(`Medicine`);
   const values = sortByRating(Object.values(data));
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 5; i++) {
     const id = getId(data, values[i]);
     response += createStr(id, values[i]);
   }
